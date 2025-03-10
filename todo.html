@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+<link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-tasks"></i> To-Do List</h2>
+        <div class="input-container">
+            <input id="taskInput" type="text" placeholder="Add a new task">
+            <button onclick="addTask()"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <div class="filter-container">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+            <button onclick="filterTasks('pending')">Pending</button>
+        </div>
+        <ul id="taskList"></ul>
+        <button class="clear-btn" onclick="clearAllTasks()"><i class="fas fa-trash-alt"></i> Clear All</button>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
+
